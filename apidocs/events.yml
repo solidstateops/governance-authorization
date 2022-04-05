@@ -1,0 +1,59 @@
+asyncapi: "2.2.0"
+info:
+  title: Authorization Governance Events
+  version: "1.0.0"
+  description: |
+    The authorization service ensures that the user is authorized to have access to a particular resource.
+servers:
+  eventgrid:
+    url: https://dev-event-grid-test.westus2-1.eventgrid.azure.net/api/events
+    protocol: http
+channels:
+  AuthorizationStarted:
+    publish:
+      summary: Inform about the user choosing to begin an authorization operation for a specific claimant.
+      message:
+        name: AuthorizationStarted
+        payload:
+          type: object
+          properties:
+            id:
+              type: string
+              description: Id of the message - should be unique for each message.
+            topic:
+              type: string
+              description: "Name of the topic (Authorization)"
+            subject:
+              type: string
+              description: Reference to specific claimant info
+            eventTime:
+              type: string
+              format: date-time
+              description: Date and time when the message was sent.
+            dataVersion:
+              type: string
+              description: Semantic version of Authorization Governance API
+  AuthorizationCompleted:
+    publish:
+      summary: Inform about the authorization operation being completed for a specific claimant.
+      message:
+        name: AuthorizationCompleted
+        payload:
+          type: object
+          properties:
+            id:
+              type: string
+              description: Id of the message - should be unique for each message.
+            topic:
+              type: string
+              description: "Name of the topic (Authorization)"
+            subject:
+              type: string
+              description: Reference to specific claimant info
+            eventTime:
+              type: string
+              format: date-time
+              description: Date and time when the message was sent.
+            dataVersion:
+              type: string
+              description: Semantic version of Authorization Governance API
