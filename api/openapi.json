@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "Authorization.Service API",
+    "title": "Auth.Service API",
     "version": "v1"
   },
   "paths": {

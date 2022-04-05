@@ -8,5 +8,4 @@
 
  ## Download the [C# (netcore) SDK](./csharp-netcore-client.zip)
 
- Click [here](https://github.com/solidstateops/governances/wiki) to see more
-
+ Click [here](https://github.com/solidstateops/governances/wiki) to see more governances.
