@@ -1,0 +1,5035 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Authorization.Service API",
+    "version": "v1"
+  },
+  "paths": {
+    "/Area": {
+      "post": {
+        "tags": [
+          "Area"
+        ],
+        "operationId": "Area_Add",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Area"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Area"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Area"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Area"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AreaServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AreaServiceResult"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Area"
+        ],
+        "operationId": "Area_Update",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Area"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Area"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Area"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Area"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AreaServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AreaServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Area/{id}": {
+      "delete": {
+        "tags": [
+          "Area"
+        ],
+        "operationId": "Area_Delete",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "x-nullable": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Area/{areaId}": {
+      "get": {
+        "tags": [
+          "Area"
+        ],
+        "operationId": "Area_GetById",
+        "parameters": [
+          {
+            "name": "areaId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "x-nullable": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AreaServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AreaServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Area/{areaId}/permissions": {
+      "get": {
+        "tags": [
+          "Area"
+        ],
+        "operationId": "Area_GetPermissionsForArea",
+        "parameters": [
+          {
+            "name": "areaId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "x-nullable": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PermissionIEnumerableServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PermissionIEnumerableServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Area/Search": {
+      "post": {
+        "tags": [
+          "Area"
+        ],
+        "operationId": "Area_Search",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/AreaSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/AreaSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/AreaSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/AreaSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AreaIEnumerableServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AreaIEnumerableServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Area/PagedSearch": {
+      "post": {
+        "tags": [
+          "Area"
+        ],
+        "operationId": "Area_PagedSearch",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AreaServiceSearchResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AreaServiceSearchResult"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Client": {
+      "post": {
+        "tags": [
+          "Client"
+        ],
+        "operationId": "Client_Add",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Client"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Client"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Client"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Client"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ClientServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ClientServiceResult"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Client"
+        ],
+        "operationId": "Client_Update",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Client"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Client"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Client"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Client"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ClientServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ClientServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Client/{Id}": {
+      "delete": {
+        "tags": [
+          "Client"
+        ],
+        "operationId": "Client_Delete",
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "x-nullable": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Client"
+        ],
+        "operationId": "Client_GetById",
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "x-nullable": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ClientServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ClientServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Client/Search": {
+      "post": {
+        "tags": [
+          "Client"
+        ],
+        "operationId": "Client_Search",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ClientSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ClientSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ClientSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ClientSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ClientIEnumerableServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ClientIEnumerableServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Client/PagedSearch": {
+      "post": {
+        "tags": [
+          "Client"
+        ],
+        "operationId": "Client_PagedSearch",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ClientServiceSearchResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ClientServiceSearchResult"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Client/{clientId}/Roles": {
+      "get": {
+        "tags": [
+          "Client"
+        ],
+        "operationId": "Client_GetClientRoles",
+        "parameters": [
+          {
+            "name": "clientId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "x-nullable": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RoleIEnumerableServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RoleIEnumerableServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Client/{clientId}/UpdateRoles": {
+      "put": {
+        "tags": [
+          "Client"
+        ],
+        "operationId": "Client_UpdateRoles",
+        "parameters": [
+          {
+            "name": "clientId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "x-nullable": false
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int64",
+                  "x-nullable": false
+                },
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int64",
+                  "x-nullable": false
+                },
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int64",
+                  "x-nullable": false
+                },
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int64",
+                  "x-nullable": false
+                },
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ClientServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ClientServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Invite/Create": {
+      "post": {
+        "tags": [
+          "Invite"
+        ],
+        "operationId": "Invite_Create",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/CreateInviteRequest"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/CreateInviteRequest"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/CreateInviteRequest"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/CreateInviteRequest"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "422": {
+            "description": "Client Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "x-nullable": true
+                  },
+                  "x-nullable": true
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "x-nullable": true
+                  },
+                  "x-nullable": true
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Invite/{inviteId}": {
+      "delete": {
+        "tags": [
+          "Invite"
+        ],
+        "operationId": "Invite_DeleteInvite",
+        "parameters": [
+          {
+            "name": "inviteId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "x-nullable": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Invite/Search": {
+      "post": {
+        "tags": [
+          "Invite"
+        ],
+        "operationId": "Invite_Search",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/InviteSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/InviteSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/InviteSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/InviteSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InviteIEnumerableServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InviteIEnumerableServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Invite/PagedSearch": {
+      "post": {
+        "tags": [
+          "Invite"
+        ],
+        "operationId": "Invite_PagedSearch",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InviteServiceSearchResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InviteServiceSearchResult"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Migration/OneTime": {
+      "post": {
+        "tags": [
+          "Migration"
+        ],
+        "operationId": "Migration_OneTimeMigration",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/OneTimeMigrationSettings"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/OneTimeMigrationSettings"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/OneTimeMigrationSettings"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/OneTimeMigrationSettings"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MigrationResultServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MigrationResultServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Permission": {
+      "post": {
+        "tags": [
+          "Permission"
+        ],
+        "operationId": "Permission_Add",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Permission"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Permission"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Permission"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Permission"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PermissionServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PermissionServiceResult"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Permission"
+        ],
+        "operationId": "Permission_Update",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Permission"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Permission"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Permission"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Permission"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PermissionServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PermissionServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Permission/{permissionId}": {
+      "delete": {
+        "tags": [
+          "Permission"
+        ],
+        "operationId": "Permission_Delete",
+        "parameters": [
+          {
+            "name": "permissionId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "x-nullable": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Permission"
+        ],
+        "operationId": "Permission_GetById",
+        "parameters": [
+          {
+            "name": "permissionId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "x-nullable": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PermissionServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PermissionServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Permission/{permissionId}/Role": {
+      "get": {
+        "tags": [
+          "Permission"
+        ],
+        "operationId": "Permission_GetRolesForPermission",
+        "parameters": [
+          {
+            "name": "permissionId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "x-nullable": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RoleIEnumerableServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RoleIEnumerableServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Permission/PagedSearch": {
+      "post": {
+        "tags": [
+          "Permission"
+        ],
+        "operationId": "Permission_PagedSearch",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PermissionServiceSearchResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PermissionServiceSearchResult"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Permission/Search": {
+      "post": {
+        "tags": [
+          "Permission"
+        ],
+        "operationId": "Permission_Search",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PermissionSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PermissionSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PermissionSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PermissionSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PermissionIEnumerableServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PermissionIEnumerableServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/PermissionConstraint": {
+      "post": {
+        "tags": [
+          "PermissionConstraint"
+        ],
+        "operationId": "PermissionConstraint_Add",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PermissionConstraint"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PermissionConstraint"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PermissionConstraint"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PermissionConstraint"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PermissionConstraintServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PermissionConstraintServiceResult"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "PermissionConstraint"
+        ],
+        "operationId": "PermissionConstraint_Update",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PermissionConstraint"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PermissionConstraint"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PermissionConstraint"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PermissionConstraint"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PermissionConstraintServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PermissionConstraintServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/PermissionConstraint/{id}": {
+      "delete": {
+        "tags": [
+          "PermissionConstraint"
+        ],
+        "operationId": "PermissionConstraint_Delete",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "x-nullable": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "PermissionConstraint"
+        ],
+        "operationId": "PermissionConstraint_GetById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "x-nullable": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PermissionConstraintServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PermissionConstraintServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/PermissionConstraint/Search": {
+      "post": {
+        "tags": [
+          "PermissionConstraint"
+        ],
+        "operationId": "PermissionConstraint_Search",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PermissionConstraintSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PermissionConstraintSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PermissionConstraintSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PermissionConstraintSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PermissionConstraintIEnumerableServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PermissionConstraintIEnumerableServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/PermissionConstraint/PagedSearch": {
+      "post": {
+        "tags": [
+          "PermissionConstraint"
+        ],
+        "operationId": "PermissionConstraint_PagedSearch",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PermissionConstraintServiceSearchResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PermissionConstraintServiceSearchResult"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Role": {
+      "post": {
+        "tags": [
+          "Role"
+        ],
+        "operationId": "Role_Add",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Role"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Role"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Role"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Role"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RoleServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RoleServiceResult"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Role"
+        ],
+        "operationId": "Role_Update",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Role"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Role"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Role"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Role"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RoleServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RoleServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Role/{roleId}": {
+      "delete": {
+        "tags": [
+          "Role"
+        ],
+        "operationId": "Role_Delete",
+        "parameters": [
+          {
+            "name": "roleId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "x-nullable": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Role"
+        ],
+        "operationId": "Role_GetById",
+        "parameters": [
+          {
+            "name": "roleId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "x-nullable": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RoleServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RoleServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Role/{roleId}/Users": {
+      "get": {
+        "tags": [
+          "Role"
+        ],
+        "operationId": "Role_GetUsersInRole",
+        "parameters": [
+          {
+            "name": "roleId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "x-nullable": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserIEnumerableServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserIEnumerableServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Role/{roleId}/Users/PagedSearch": {
+      "post": {
+        "tags": [
+          "Role"
+        ],
+        "operationId": "Role_GetPaginatedUsersForRole",
+        "parameters": [
+          {
+            "name": "roleId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "x-nullable": false
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserServiceSearchResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserServiceSearchResult"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Role/{roleId}/Permissions": {
+      "get": {
+        "tags": [
+          "Role"
+        ],
+        "operationId": "Role_GetPermissionsForRole",
+        "parameters": [
+          {
+            "name": "roleId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "x-nullable": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RolePermissionIEnumerableServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RolePermissionIEnumerableServiceResult"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Role"
+        ],
+        "operationId": "Role_UpdatePermissions",
+        "parameters": [
+          {
+            "name": "roleId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "x-nullable": false
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int64",
+                  "x-nullable": false
+                },
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int64",
+                  "x-nullable": false
+                },
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int64",
+                  "x-nullable": false
+                },
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int64",
+                  "x-nullable": false
+                },
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RoleServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RoleServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Role/{roleId}/Permissions/PagedSearch": {
+      "post": {
+        "tags": [
+          "Role"
+        ],
+        "operationId": "Role_GetPaginatedPermissionsForRole",
+        "parameters": [
+          {
+            "name": "roleId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "x-nullable": false
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RolePermissionServiceSearchResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RolePermissionServiceSearchResult"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Role/{roleId}/Permissions{permissionId}": {
+      "delete": {
+        "tags": [
+          "Role"
+        ],
+        "operationId": "Role_DeletePermissionForRole",
+        "parameters": [
+          {
+            "name": "roleId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "x-nullable": false
+            }
+          },
+          {
+            "name": "permissionId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "x-nullable": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PermissionServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PermissionServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Role/{roleId}/PermissionsConstraints": {
+      "get": {
+        "tags": [
+          "Role"
+        ],
+        "operationId": "Role_GetPermissionsConstraintsForRole",
+        "parameters": [
+          {
+            "name": "roleId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "x-nullable": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PermissionConstraintIEnumerableServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PermissionConstraintIEnumerableServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Role/{roleId}/Permission/{permissionId}/PermissionConstraint/{permissionConstraintId}": {
+      "put": {
+        "tags": [
+          "Role"
+        ],
+        "operationId": "Role_AddPermissionsConstraintsForRole",
+        "parameters": [
+          {
+            "name": "roleId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "x-nullable": false
+            }
+          },
+          {
+            "name": "permissionId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "x-nullable": false
+            }
+          },
+          {
+            "name": "permissionConstraintId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "x-nullable": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RoleServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RoleServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Role/PagedSearch": {
+      "post": {
+        "tags": [
+          "Role"
+        ],
+        "operationId": "Role_PagedSearch",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RoleServiceSearchResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RoleServiceSearchResult"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Role/Search": {
+      "post": {
+        "tags": [
+          "Role"
+        ],
+        "operationId": "Role_Search",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/RoleSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/RoleSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/RoleSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/RoleSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RoleIEnumerableServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RoleIEnumerableServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Token/HasPermission/{areaName}/{permissionName}": {
+      "get": {
+        "tags": [
+          "Token"
+        ],
+        "operationId": "Token_HasPermission",
+        "parameters": [
+          {
+            "name": "areaName",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "nullable": true,
+              "x-nullable": true
+            }
+          },
+          {
+            "name": "permissionName",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "nullable": true,
+              "x-nullable": true
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean",
+                  "x-nullable": false
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean",
+                  "x-nullable": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Token/ListPermissions/{areaName}": {
+      "get": {
+        "tags": [
+          "Token"
+        ],
+        "operationId": "Token_ListPermissions",
+        "parameters": [
+          {
+            "name": "areaName",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "nullable": true,
+              "x-nullable": true
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PermissionIEnumerableServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PermissionIEnumerableServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Token/ListAreas": {
+      "get": {
+        "tags": [
+          "Token"
+        ],
+        "operationId": "Token_ListAreas",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AreaIEnumerableServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AreaIEnumerableServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/User": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "operationId": "User_Add",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/User"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/User"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/User"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/User"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserServiceResult"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "User"
+        ],
+        "operationId": "User_Update",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/User"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/User"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/User"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/User"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/User/{userId}": {
+      "delete": {
+        "tags": [
+          "User"
+        ],
+        "operationId": "User_Delete",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "x-nullable": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "operationId": "User_GetById",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "x-nullable": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/User/BySubject/{subjectId}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "operationId": "User_GetBySubjectId",
+        "parameters": [
+          {
+            "name": "subjectId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "nullable": true,
+              "x-nullable": true
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/User/Search": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "operationId": "User_Search",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/UserSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/UserSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/UserSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/UserSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserIEnumerableServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserIEnumerableServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/User/PagedSearch": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "operationId": "User_PagedSearch",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PagedSearch"
+                  }
+                ],
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserServiceSearchResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserServiceSearchResult"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/User/{userId}/Roles": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "operationId": "User_GetUserRoles",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "x-nullable": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RoleIEnumerableServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RoleIEnumerableServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/User/{userId}/UpdateRoles": {
+      "put": {
+        "tags": [
+          "User"
+        ],
+        "operationId": "User_UpdateRoles",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "x-nullable": false
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int64",
+                  "x-nullable": false
+                },
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int64",
+                  "x-nullable": false
+                },
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int64",
+                  "x-nullable": false
+                },
+                "nullable": true,
+                "x-nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int64",
+                  "x-nullable": false
+                },
+                "nullable": true,
+                "x-nullable": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserServiceResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/User/HasPermission/{areaName}/{permissionName}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "operationId": "User_HasPermission",
+        "parameters": [
+          {
+            "name": "areaName",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "nullable": true,
+              "x-nullable": true
+            }
+          },
+          {
+            "name": "permissionName",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "nullable": true,
+              "x-nullable": true
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean",
+                  "x-nullable": false
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean",
+                  "x-nullable": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/User/MigrateUser/{fromSubjectId}/{toSubjectId}": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "operationId": "User_MigrateUserSubject",
+        "parameters": [
+          {
+            "name": "fromSubjectId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "nullable": true,
+              "x-nullable": true
+            }
+          },
+          {
+            "name": "toSubjectId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "x-nullable": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Area": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64",
+            "x-nullable": false
+          },
+          "name": {
+            "type": "string",
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "AreaServiceResult": {
+        "type": "object",
+        "properties": {
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "value": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Area"
+              }
+            ],
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "Permission": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64",
+            "x-nullable": false
+          },
+          "name": {
+            "type": "string",
+            "nullable": true,
+            "x-nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true,
+            "x-nullable": true
+          },
+          "areaId": {
+            "type": "integer",
+            "format": "int64",
+            "x-nullable": false
+          },
+          "area": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Area"
+              }
+            ],
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "PermissionIEnumerableServiceResult": {
+        "type": "object",
+        "properties": {
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "value": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Permission"
+            },
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "AreaSearch": {
+        "type": "object",
+        "properties": {
+          "ids": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int64",
+              "x-nullable": false
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "clientIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "userIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid",
+              "x-nullable": false
+            },
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "AreaIEnumerableServiceResult": {
+        "type": "object",
+        "properties": {
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "value": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Area"
+            },
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "ListSortDirection": {
+        "enum": [
+          "Ascending",
+          "Descending"
+        ],
+        "type": "string",
+        "x-nullable": false
+      },
+      "PagedSearch": {
+        "type": "object",
+        "properties": {
+          "searchTerm": {
+            "type": "string",
+            "nullable": true,
+            "x-nullable": true
+          },
+          "skip": {
+            "type": "integer",
+            "format": "int32",
+            "x-nullable": false
+          },
+          "take": {
+            "type": "integer",
+            "format": "int32",
+            "x-nullable": false
+          },
+          "sortTerm": {
+            "type": "string",
+            "nullable": true,
+            "x-nullable": true
+          },
+          "sortDirection": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/ListSortDirection"
+              }
+            ],
+            "nullable": true,
+            "x-nullable": true
+          },
+          "withDeleted": {
+            "type": "boolean",
+            "x-nullable": false
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "AreaServiceSearchResult": {
+        "type": "object",
+        "properties": {
+          "filteredCount": {
+            "type": "integer",
+            "format": "int64",
+            "x-nullable": false
+          },
+          "searchResults": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Area"
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "searchRequest": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/PagedSearch"
+              }
+            ],
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "Severity": {
+        "enum": [
+          "Error",
+          "Warning",
+          "Info"
+        ],
+        "type": "string",
+        "x-nullable": false
+      },
+      "ValidationFailure": {
+        "type": "object",
+        "properties": {
+          "propertyName": {
+            "type": "string",
+            "nullable": true,
+            "x-nullable": true
+          },
+          "errorMessage": {
+            "type": "string",
+            "nullable": true,
+            "x-nullable": true
+          },
+          "attemptedValue": {
+            "type": "object",
+            "additionalProperties": false,
+            "nullable": true,
+            "x-nullable": true
+          },
+          "customState": {
+            "type": "object",
+            "additionalProperties": false,
+            "nullable": true,
+            "x-nullable": true
+          },
+          "severity": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Severity"
+              }
+            ],
+            "x-nullable": false
+          },
+          "errorCode": {
+            "type": "string",
+            "nullable": true,
+            "x-nullable": true
+          },
+          "formattedMessageArguments": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "x-nullable": true
+            },
+            "nullable": true,
+            "deprecated": true,
+            "x-nullable": true
+          },
+          "formattedMessagePlaceholderValues": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "additionalProperties": false,
+              "x-nullable": true
+            },
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "ValidationResult": {
+        "type": "object",
+        "properties": {
+          "isValid": {
+            "type": "boolean",
+            "readOnly": true,
+            "x-nullable": false
+          },
+          "errors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ValidationFailure"
+            },
+            "nullable": true,
+            "readOnly": true,
+            "x-nullable": true
+          },
+          "ruleSetsExecuted": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "nullable": true,
+            "readOnly": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "Client": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "x-nullable": false
+          },
+          "clientId": {
+            "type": "string",
+            "nullable": true,
+            "x-nullable": true
+          },
+          "clientName": {
+            "type": "string",
+            "nullable": true,
+            "x-nullable": true
+          },
+          "enabled": {
+            "type": "boolean",
+            "x-nullable": false
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "ClientServiceResult": {
+        "type": "object",
+        "properties": {
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "value": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Client"
+              }
+            ],
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "ClientSearch": {
+        "type": "object",
+        "properties": {
+          "pageSize": {
+            "type": "integer",
+            "format": "int32",
+            "default": 20,
+            "x-nullable": false
+          },
+          "pageOffset": {
+            "type": "integer",
+            "format": "int32",
+            "x-nullable": false
+          },
+          "clientIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid",
+              "x-nullable": false
+            },
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "ClientIEnumerableServiceResult": {
+        "type": "object",
+        "properties": {
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "value": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Client"
+            },
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "ClientServiceSearchResult": {
+        "type": "object",
+        "properties": {
+          "filteredCount": {
+            "type": "integer",
+            "format": "int64",
+            "x-nullable": false
+          },
+          "searchResults": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Client"
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "searchRequest": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/PagedSearch"
+              }
+            ],
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "Role": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64",
+            "x-nullable": false
+          },
+          "name": {
+            "type": "string",
+            "nullable": true,
+            "x-nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "RoleIEnumerableServiceResult": {
+        "type": "object",
+        "properties": {
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "value": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Role"
+            },
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "CreateInviteRequest": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "nullable": true,
+            "x-nullable": true
+          },
+          "roleNames": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "InviteSearch": {
+        "type": "object",
+        "properties": {
+          "ids": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int64",
+              "x-nullable": false
+            },
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "InviteRole": {
+        "type": "object",
+        "properties": {
+          "inviteId": {
+            "type": "integer",
+            "format": "int64",
+            "x-nullable": false
+          },
+          "roleName": {
+            "type": "string",
+            "nullable": true,
+            "x-nullable": true
+          },
+          "roleId": {
+            "type": "integer",
+            "format": "int64",
+            "x-nullable": false
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "Invite": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64",
+            "x-nullable": false
+          },
+          "email": {
+            "type": "string",
+            "nullable": true,
+            "x-nullable": true
+          },
+          "consumedBy": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true,
+            "x-nullable": true
+          },
+          "consumedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true,
+            "x-nullable": true
+          },
+          "createdById": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true,
+            "x-nullable": true
+          },
+          "modifiedById": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true,
+            "x-nullable": true
+          },
+          "inviteRoles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/InviteRole"
+            },
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "InviteIEnumerableServiceResult": {
+        "type": "object",
+        "properties": {
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "value": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Invite"
+            },
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "InviteServiceSearchResult": {
+        "type": "object",
+        "properties": {
+          "filteredCount": {
+            "type": "integer",
+            "format": "int64",
+            "x-nullable": false
+          },
+          "searchResults": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Invite"
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "searchRequest": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/PagedSearch"
+              }
+            ],
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "OneTimeMigrationSettings": {
+        "type": "object",
+        "properties": {
+          "dryRun": {
+            "type": "boolean",
+            "x-nullable": false
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "AddedPermission": {
+        "type": "object",
+        "properties": {
+          "areaName": {
+            "type": "string",
+            "nullable": true,
+            "x-nullable": true
+          },
+          "permissionName": {
+            "type": "string",
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "AddedRolePermission": {
+        "type": "object",
+        "properties": {
+          "roleName": {
+            "type": "string",
+            "nullable": true,
+            "x-nullable": true
+          },
+          "permissionName": {
+            "type": "string",
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "MigrationResult": {
+        "type": "object",
+        "properties": {
+          "addedAreas": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "addedPermissions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AddedPermission"
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "addedRoles": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "addedRolePermissions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AddedRolePermission"
+            },
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "MigrationResultServiceResult": {
+        "type": "object",
+        "properties": {
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "value": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/MigrationResult"
+              }
+            ],
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "PermissionServiceResult": {
+        "type": "object",
+        "properties": {
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "value": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Permission"
+              }
+            ],
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "PermissionServiceSearchResult": {
+        "type": "object",
+        "properties": {
+          "filteredCount": {
+            "type": "integer",
+            "format": "int64",
+            "x-nullable": false
+          },
+          "searchResults": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Permission"
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "searchRequest": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/PagedSearch"
+              }
+            ],
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "PermissionSearch": {
+        "type": "object",
+        "properties": {
+          "ids": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int64",
+              "x-nullable": false
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "names": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "areaNames": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "userIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid",
+              "x-nullable": false
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "subjectIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "clientIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "PermissionConstraint": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64",
+            "x-nullable": false
+          },
+          "name": {
+            "type": "string",
+            "nullable": true,
+            "x-nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true,
+            "x-nullable": true
+          },
+          "rangeStart": {
+            "type": "integer",
+            "format": "int64",
+            "x-nullable": false
+          },
+          "rangeEnd": {
+            "type": "integer",
+            "format": "int64",
+            "x-nullable": false
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "PermissionConstraintServiceResult": {
+        "type": "object",
+        "properties": {
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "value": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/PermissionConstraint"
+              }
+            ],
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "PermissionConstraintSearch": {
+        "type": "object",
+        "properties": {
+          "ids": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int64",
+              "x-nullable": false
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "names": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "PermissionConstraintIEnumerableServiceResult": {
+        "type": "object",
+        "properties": {
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "value": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PermissionConstraint"
+            },
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "PermissionConstraintServiceSearchResult": {
+        "type": "object",
+        "properties": {
+          "filteredCount": {
+            "type": "integer",
+            "format": "int64",
+            "x-nullable": false
+          },
+          "searchResults": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PermissionConstraint"
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "searchRequest": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/PagedSearch"
+              }
+            ],
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "RoleServiceResult": {
+        "type": "object",
+        "properties": {
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "value": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Role"
+              }
+            ],
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "User": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "x-nullable": false
+          },
+          "subjectId": {
+            "type": "string",
+            "nullable": true,
+            "x-nullable": true
+          },
+          "fullName": {
+            "type": "string",
+            "nullable": true,
+            "x-nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true,
+            "x-nullable": true
+          },
+          "archetype": {
+            "type": "string",
+            "nullable": true,
+            "x-nullable": true
+          },
+          "lastLogin": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true,
+            "x-nullable": true
+          },
+          "deleted": {
+            "type": "boolean",
+            "x-nullable": false
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "UserIEnumerableServiceResult": {
+        "type": "object",
+        "properties": {
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "value": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/User"
+            },
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "UserServiceSearchResult": {
+        "type": "object",
+        "properties": {
+          "filteredCount": {
+            "type": "integer",
+            "format": "int64",
+            "x-nullable": false
+          },
+          "searchResults": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/User"
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "searchRequest": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/PagedSearch"
+              }
+            ],
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "RolePermissionConstraint": {
+        "type": "object",
+        "properties": {
+          "permissionConstraint": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/PermissionConstraint"
+              }
+            ],
+            "nullable": true,
+            "x-nullable": true
+          },
+          "rolePermission": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/RolePermission"
+              }
+            ],
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "RolePermission": {
+        "type": "object",
+        "properties": {
+          "role": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Role"
+              }
+            ],
+            "nullable": true,
+            "x-nullable": true
+          },
+          "permission": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Permission"
+              }
+            ],
+            "nullable": true,
+            "x-nullable": true
+          },
+          "rolePermissionConstraints": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RolePermissionConstraint"
+            },
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "RolePermissionIEnumerableServiceResult": {
+        "type": "object",
+        "properties": {
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "value": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RolePermission"
+            },
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "RolePermissionServiceSearchResult": {
+        "type": "object",
+        "properties": {
+          "filteredCount": {
+            "type": "integer",
+            "format": "int64",
+            "x-nullable": false
+          },
+          "searchResults": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RolePermission"
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "searchRequest": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/PagedSearch"
+              }
+            ],
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "RoleServiceSearchResult": {
+        "type": "object",
+        "properties": {
+          "filteredCount": {
+            "type": "integer",
+            "format": "int64",
+            "x-nullable": false
+          },
+          "searchResults": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Role"
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "searchRequest": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/PagedSearch"
+              }
+            ],
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "RoleSearch": {
+        "type": "object",
+        "properties": {
+          "ids": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int64",
+              "x-nullable": false
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "names": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "userIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid",
+              "x-nullable": false
+            },
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "UserServiceResult": {
+        "type": "object",
+        "properties": {
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "value": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/User"
+              }
+            ],
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      },
+      "UserSearch": {
+        "type": "object",
+        "properties": {
+          "pageSize": {
+            "type": "integer",
+            "format": "int32",
+            "default": 20,
+            "x-nullable": false
+          },
+          "pageOffset": {
+            "type": "integer",
+            "format": "int32",
+            "x-nullable": false
+          },
+          "ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid",
+              "x-nullable": false
+            },
+            "nullable": true,
+            "x-nullable": true
+          },
+          "subjectIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "nullable": true,
+            "x-nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "x-nullable": true
+      }
+    },
+    "securitySchemes": {
+      "oauth2": {
+        "type": "oauth2",
+        "flows": {
+          "implicit": {
+            "authorizationUrl": "https://identity-dev.solidstateops.com/connect/authorize",
+            "tokenUrl": "https://identity-dev.solidstateops.com/connect/token",
+            "scopes": {
+              "api": "required"
+            }
+          }
+        }
+      }
+    }
+  },
+  "security": [
+    {
+      "oauth2": [
+        "api1"
+      ]
+    }
+  ]
+}
