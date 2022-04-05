@@ -1,5 +1,2 @@
 # governance-authorization
 Authorization Governance
-
-
-
