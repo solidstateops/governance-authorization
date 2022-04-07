@@ -7,52 +7,34 @@
   "paths": {
     "/Area": {
       "post": {
-        "tags": [
-          "Area"
-        ],
+        "tags": ["Area"],
         "operationId": "Area_Add",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Area"
-                  }
-                ],
+                "$ref": "#/components/schemas/Area",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Area"
-                  }
-                ],
+                "$ref": "#/components/schemas/Area",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "text/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Area"
-                  }
-                ],
+                "$ref": "#/components/schemas/Area",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/*+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Area"
-                  }
-                ],
+                "$ref": "#/components/schemas/Area",
                 "nullable": true,
                 "x-nullable": true
               }
@@ -78,52 +60,34 @@
         }
       },
       "put": {
-        "tags": [
-          "Area"
-        ],
+        "tags": ["Area"],
         "operationId": "Area_Update",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Area"
-                  }
-                ],
+                "$ref": "#/components/schemas/Area",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Area"
-                  }
-                ],
+                "$ref": "#/components/schemas/Area",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "text/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Area"
-                  }
-                ],
+                "$ref": "#/components/schemas/Area",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/*+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Area"
-                  }
-                ],
+                "$ref": "#/components/schemas/Area",
                 "nullable": true,
                 "x-nullable": true
               }
@@ -151,9 +115,7 @@
     },
     "/Area/{id}": {
       "delete": {
-        "tags": [
-          "Area"
-        ],
+        "tags": ["Area"],
         "operationId": "Area_Delete",
         "parameters": [
           {
@@ -176,9 +138,7 @@
     },
     "/Area/{areaId}": {
       "get": {
-        "tags": [
-          "Area"
-        ],
+        "tags": ["Area"],
         "operationId": "Area_GetById",
         "parameters": [
           {
@@ -213,9 +173,7 @@
     },
     "/Area/{areaId}/permissions": {
       "get": {
-        "tags": [
-          "Area"
-        ],
+        "tags": ["Area"],
         "operationId": "Area_GetPermissionsForArea",
         "parameters": [
           {
@@ -250,52 +208,34 @@
     },
     "/Area/Search": {
       "post": {
-        "tags": [
-          "Area"
-        ],
+        "tags": ["Area"],
         "operationId": "Area_Search",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/AreaSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/AreaSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/AreaSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/AreaSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "text/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/AreaSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/AreaSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/*+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/AreaSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/AreaSearch",
                 "nullable": true,
                 "x-nullable": true
               }
@@ -323,52 +263,34 @@
     },
     "/Area/PagedSearch": {
       "post": {
-        "tags": [
-          "Area"
-        ],
+        "tags": ["Area"],
         "operationId": "Area_PagedSearch",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "text/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/*+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
@@ -411,52 +333,34 @@
     },
     "/Client": {
       "post": {
-        "tags": [
-          "Client"
-        ],
+        "tags": ["Client"],
         "operationId": "Client_Add",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Client"
-                  }
-                ],
+                "$ref": "#/components/schemas/Client",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Client"
-                  }
-                ],
+                "$ref": "#/components/schemas/Client",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "text/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Client"
-                  }
-                ],
+                "$ref": "#/components/schemas/Client",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/*+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Client"
-                  }
-                ],
+                "$ref": "#/components/schemas/Client",
                 "nullable": true,
                 "x-nullable": true
               }
@@ -482,52 +386,34 @@
         }
       },
       "put": {
-        "tags": [
-          "Client"
-        ],
+        "tags": ["Client"],
         "operationId": "Client_Update",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Client"
-                  }
-                ],
+                "$ref": "#/components/schemas/Client",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Client"
-                  }
-                ],
+                "$ref": "#/components/schemas/Client",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "text/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Client"
-                  }
-                ],
+                "$ref": "#/components/schemas/Client",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/*+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Client"
-                  }
-                ],
+                "$ref": "#/components/schemas/Client",
                 "nullable": true,
                 "x-nullable": true
               }
@@ -555,9 +441,7 @@
     },
     "/Client/{Id}": {
       "delete": {
-        "tags": [
-          "Client"
-        ],
+        "tags": ["Client"],
         "operationId": "Client_Delete",
         "parameters": [
           {
@@ -578,9 +462,7 @@
         }
       },
       "get": {
-        "tags": [
-          "Client"
-        ],
+        "tags": ["Client"],
         "operationId": "Client_GetById",
         "parameters": [
           {
@@ -615,52 +497,34 @@
     },
     "/Client/Search": {
       "post": {
-        "tags": [
-          "Client"
-        ],
+        "tags": ["Client"],
         "operationId": "Client_Search",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/ClientSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/ClientSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/ClientSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/ClientSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "text/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/ClientSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/ClientSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/*+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/ClientSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/ClientSearch",
                 "nullable": true,
                 "x-nullable": true
               }
@@ -688,52 +552,34 @@
     },
     "/Client/PagedSearch": {
       "post": {
-        "tags": [
-          "Client"
-        ],
+        "tags": ["Client"],
         "operationId": "Client_PagedSearch",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "text/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/*+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
@@ -776,9 +622,7 @@
     },
     "/Client/{clientId}/Roles": {
       "get": {
-        "tags": [
-          "Client"
-        ],
+        "tags": ["Client"],
         "operationId": "Client_GetClientRoles",
         "parameters": [
           {
@@ -813,9 +657,7 @@
     },
     "/Client/{clientId}/UpdateRoles": {
       "put": {
-        "tags": [
-          "Client"
-        ],
+        "tags": ["Client"],
         "operationId": "Client_UpdateRoles",
         "parameters": [
           {
@@ -902,52 +744,34 @@
     },
     "/Invite/Create": {
       "post": {
-        "tags": [
-          "Invite"
-        ],
+        "tags": ["Invite"],
         "operationId": "Invite_Create",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/CreateInviteRequest"
-                  }
-                ],
+                "$ref": "#/components/schemas/CreateInviteRequest",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/CreateInviteRequest"
-                  }
-                ],
+                "$ref": "#/components/schemas/CreateInviteRequest",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "text/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/CreateInviteRequest"
-                  }
-                ],
+                "$ref": "#/components/schemas/CreateInviteRequest",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/*+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/CreateInviteRequest"
-                  }
-                ],
+                "$ref": "#/components/schemas/CreateInviteRequest",
                 "nullable": true,
                 "x-nullable": true
               }
@@ -988,9 +812,7 @@
     },
     "/Invite/{inviteId}": {
       "delete": {
-        "tags": [
-          "Invite"
-        ],
+        "tags": ["Invite"],
         "operationId": "Invite_DeleteInvite",
         "parameters": [
           {
@@ -1013,52 +835,34 @@
     },
     "/Invite/Search": {
       "post": {
-        "tags": [
-          "Invite"
-        ],
+        "tags": ["Invite"],
         "operationId": "Invite_Search",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/InviteSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/InviteSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/InviteSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/InviteSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "text/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/InviteSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/InviteSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/*+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/InviteSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/InviteSearch",
                 "nullable": true,
                 "x-nullable": true
               }
@@ -1086,52 +890,34 @@
     },
     "/Invite/PagedSearch": {
       "post": {
-        "tags": [
-          "Invite"
-        ],
+        "tags": ["Invite"],
         "operationId": "Invite_PagedSearch",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "text/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/*+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
@@ -1174,52 +960,34 @@
     },
     "/Migration/OneTime": {
       "post": {
-        "tags": [
-          "Migration"
-        ],
+        "tags": ["Migration"],
         "operationId": "Migration_OneTimeMigration",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/OneTimeMigrationSettings"
-                  }
-                ],
+                "$ref": "#/components/schemas/OneTimeMigrationSettings",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/OneTimeMigrationSettings"
-                  }
-                ],
+                "$ref": "#/components/schemas/OneTimeMigrationSettings",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "text/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/OneTimeMigrationSettings"
-                  }
-                ],
+                "$ref": "#/components/schemas/OneTimeMigrationSettings",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/*+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/OneTimeMigrationSettings"
-                  }
-                ],
+                "$ref": "#/components/schemas/OneTimeMigrationSettings",
                 "nullable": true,
                 "x-nullable": true
               }
@@ -1247,52 +1015,34 @@
     },
     "/Permission": {
       "post": {
-        "tags": [
-          "Permission"
-        ],
+        "tags": ["Permission"],
         "operationId": "Permission_Add",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Permission"
-                  }
-                ],
+                "$ref": "#/components/schemas/Permission",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Permission"
-                  }
-                ],
+                "$ref": "#/components/schemas/Permission",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "text/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Permission"
-                  }
-                ],
+                "$ref": "#/components/schemas/Permission",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/*+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Permission"
-                  }
-                ],
+                "$ref": "#/components/schemas/Permission",
                 "nullable": true,
                 "x-nullable": true
               }
@@ -1318,52 +1068,34 @@
         }
       },
       "put": {
-        "tags": [
-          "Permission"
-        ],
+        "tags": ["Permission"],
         "operationId": "Permission_Update",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Permission"
-                  }
-                ],
+                "$ref": "#/components/schemas/Permission",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Permission"
-                  }
-                ],
+                "$ref": "#/components/schemas/Permission",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "text/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Permission"
-                  }
-                ],
+                "$ref": "#/components/schemas/Permission",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/*+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Permission"
-                  }
-                ],
+                "$ref": "#/components/schemas/Permission",
                 "nullable": true,
                 "x-nullable": true
               }
@@ -1391,9 +1123,7 @@
     },
     "/Permission/{permissionId}": {
       "delete": {
-        "tags": [
-          "Permission"
-        ],
+        "tags": ["Permission"],
         "operationId": "Permission_Delete",
         "parameters": [
           {
@@ -1414,9 +1144,7 @@
         }
       },
       "get": {
-        "tags": [
-          "Permission"
-        ],
+        "tags": ["Permission"],
         "operationId": "Permission_GetById",
         "parameters": [
           {
@@ -1451,9 +1179,7 @@
     },
     "/Permission/{permissionId}/Role": {
       "get": {
-        "tags": [
-          "Permission"
-        ],
+        "tags": ["Permission"],
         "operationId": "Permission_GetRolesForPermission",
         "parameters": [
           {
@@ -1488,52 +1214,34 @@
     },
     "/Permission/PagedSearch": {
       "post": {
-        "tags": [
-          "Permission"
-        ],
+        "tags": ["Permission"],
         "operationId": "Permission_PagedSearch",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "text/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/*+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
@@ -1576,52 +1284,34 @@
     },
     "/Permission/Search": {
       "post": {
-        "tags": [
-          "Permission"
-        ],
+        "tags": ["Permission"],
         "operationId": "Permission_Search",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PermissionSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PermissionSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PermissionSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PermissionSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "text/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PermissionSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PermissionSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/*+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PermissionSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PermissionSearch",
                 "nullable": true,
                 "x-nullable": true
               }
@@ -1649,52 +1339,34 @@
     },
     "/PermissionConstraint": {
       "post": {
-        "tags": [
-          "PermissionConstraint"
-        ],
+        "tags": ["PermissionConstraint"],
         "operationId": "PermissionConstraint_Add",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PermissionConstraint"
-                  }
-                ],
+                "$ref": "#/components/schemas/PermissionConstraint",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PermissionConstraint"
-                  }
-                ],
+                "$ref": "#/components/schemas/PermissionConstraint",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "text/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PermissionConstraint"
-                  }
-                ],
+                "$ref": "#/components/schemas/PermissionConstraint",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/*+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PermissionConstraint"
-                  }
-                ],
+                "$ref": "#/components/schemas/PermissionConstraint",
                 "nullable": true,
                 "x-nullable": true
               }
@@ -1720,52 +1392,34 @@
         }
       },
       "put": {
-        "tags": [
-          "PermissionConstraint"
-        ],
+        "tags": ["PermissionConstraint"],
         "operationId": "PermissionConstraint_Update",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PermissionConstraint"
-                  }
-                ],
+                "$ref": "#/components/schemas/PermissionConstraint",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PermissionConstraint"
-                  }
-                ],
+                "$ref": "#/components/schemas/PermissionConstraint",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "text/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PermissionConstraint"
-                  }
-                ],
+                "$ref": "#/components/schemas/PermissionConstraint",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/*+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PermissionConstraint"
-                  }
-                ],
+                "$ref": "#/components/schemas/PermissionConstraint",
                 "nullable": true,
                 "x-nullable": true
               }
@@ -1793,9 +1447,7 @@
     },
     "/PermissionConstraint/{id}": {
       "delete": {
-        "tags": [
-          "PermissionConstraint"
-        ],
+        "tags": ["PermissionConstraint"],
         "operationId": "PermissionConstraint_Delete",
         "parameters": [
           {
@@ -1816,9 +1468,7 @@
         }
       },
       "get": {
-        "tags": [
-          "PermissionConstraint"
-        ],
+        "tags": ["PermissionConstraint"],
         "operationId": "PermissionConstraint_GetById",
         "parameters": [
           {
@@ -1853,52 +1503,34 @@
     },
     "/PermissionConstraint/Search": {
       "post": {
-        "tags": [
-          "PermissionConstraint"
-        ],
+        "tags": ["PermissionConstraint"],
         "operationId": "PermissionConstraint_Search",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PermissionConstraintSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PermissionConstraintSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PermissionConstraintSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PermissionConstraintSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "text/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PermissionConstraintSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PermissionConstraintSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/*+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PermissionConstraintSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PermissionConstraintSearch",
                 "nullable": true,
                 "x-nullable": true
               }
@@ -1926,52 +1558,34 @@
     },
     "/PermissionConstraint/PagedSearch": {
       "post": {
-        "tags": [
-          "PermissionConstraint"
-        ],
+        "tags": ["PermissionConstraint"],
         "operationId": "PermissionConstraint_PagedSearch",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "text/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/*+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
@@ -2014,52 +1628,34 @@
     },
     "/Role": {
       "post": {
-        "tags": [
-          "Role"
-        ],
+        "tags": ["Role"],
         "operationId": "Role_Add",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Role"
-                  }
-                ],
+                "$ref": "#/components/schemas/Role",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Role"
-                  }
-                ],
+                "$ref": "#/components/schemas/Role",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "text/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Role"
-                  }
-                ],
+                "$ref": "#/components/schemas/Role",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/*+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Role"
-                  }
-                ],
+                "$ref": "#/components/schemas/Role",
                 "nullable": true,
                 "x-nullable": true
               }
@@ -2085,52 +1681,34 @@
         }
       },
       "put": {
-        "tags": [
-          "Role"
-        ],
+        "tags": ["Role"],
         "operationId": "Role_Update",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Role"
-                  }
-                ],
+                "$ref": "#/components/schemas/Role",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Role"
-                  }
-                ],
+                "$ref": "#/components/schemas/Role",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "text/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Role"
-                  }
-                ],
+                "$ref": "#/components/schemas/Role",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/*+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/Role"
-                  }
-                ],
+                "$ref": "#/components/schemas/Role",
                 "nullable": true,
                 "x-nullable": true
               }
@@ -2158,9 +1736,7 @@
     },
     "/Role/{roleId}": {
       "delete": {
-        "tags": [
-          "Role"
-        ],
+        "tags": ["Role"],
         "operationId": "Role_Delete",
         "parameters": [
           {
@@ -2181,9 +1757,7 @@
         }
       },
       "get": {
-        "tags": [
-          "Role"
-        ],
+        "tags": ["Role"],
         "operationId": "Role_GetById",
         "parameters": [
           {
@@ -2218,9 +1792,7 @@
     },
     "/Role/{roleId}/Users": {
       "get": {
-        "tags": [
-          "Role"
-        ],
+        "tags": ["Role"],
         "operationId": "Role_GetUsersInRole",
         "parameters": [
           {
@@ -2255,9 +1827,7 @@
     },
     "/Role/{roleId}/Users/PagedSearch": {
       "post": {
-        "tags": [
-          "Role"
-        ],
+        "tags": ["Role"],
         "operationId": "Role_GetPaginatedUsersForRole",
         "parameters": [
           {
@@ -2275,44 +1845,28 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "text/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/*+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
@@ -2355,9 +1909,7 @@
     },
     "/Role/{roleId}/Permissions": {
       "get": {
-        "tags": [
-          "Role"
-        ],
+        "tags": ["Role"],
         "operationId": "Role_GetPermissionsForRole",
         "parameters": [
           {
@@ -2390,9 +1942,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Role"
-        ],
+        "tags": ["Role"],
         "operationId": "Role_UpdatePermissions",
         "parameters": [
           {
@@ -2479,9 +2029,7 @@
     },
     "/Role/{roleId}/Permissions/PagedSearch": {
       "post": {
-        "tags": [
-          "Role"
-        ],
+        "tags": ["Role"],
         "operationId": "Role_GetPaginatedPermissionsForRole",
         "parameters": [
           {
@@ -2499,44 +2047,28 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "text/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/*+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
@@ -2579,9 +2111,7 @@
     },
     "/Role/{roleId}/Permissions{permissionId}": {
       "delete": {
-        "tags": [
-          "Role"
-        ],
+        "tags": ["Role"],
         "operationId": "Role_DeletePermissionForRole",
         "parameters": [
           {
@@ -2626,9 +2156,7 @@
     },
     "/Role/{roleId}/PermissionsConstraints": {
       "get": {
-        "tags": [
-          "Role"
-        ],
+        "tags": ["Role"],
         "operationId": "Role_GetPermissionsConstraintsForRole",
         "parameters": [
           {
@@ -2663,9 +2191,7 @@
     },
     "/Role/{roleId}/Permission/{permissionId}/PermissionConstraint/{permissionConstraintId}": {
       "put": {
-        "tags": [
-          "Role"
-        ],
+        "tags": ["Role"],
         "operationId": "Role_AddPermissionsConstraintsForRole",
         "parameters": [
           {
@@ -2720,52 +2246,34 @@
     },
     "/Role/PagedSearch": {
       "post": {
-        "tags": [
-          "Role"
-        ],
+        "tags": ["Role"],
         "operationId": "Role_PagedSearch",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "text/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/*+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
@@ -2808,52 +2316,34 @@
     },
     "/Role/Search": {
       "post": {
-        "tags": [
-          "Role"
-        ],
+        "tags": ["Role"],
         "operationId": "Role_Search",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/RoleSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/RoleSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/RoleSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/RoleSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "text/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/RoleSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/RoleSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/*+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/RoleSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/RoleSearch",
                 "nullable": true,
                 "x-nullable": true
               }
@@ -2881,9 +2371,7 @@
     },
     "/Token/HasPermission/{areaName}/{permissionName}": {
       "get": {
-        "tags": [
-          "Token"
-        ],
+        "tags": ["Token"],
         "operationId": "Token_HasPermission",
         "parameters": [
           {
@@ -2930,9 +2418,7 @@
     },
     "/Token/ListPermissions/{areaName}": {
       "get": {
-        "tags": [
-          "Token"
-        ],
+        "tags": ["Token"],
         "operationId": "Token_ListPermissions",
         "parameters": [
           {
@@ -2967,9 +2453,7 @@
     },
     "/Token/ListAreas": {
       "get": {
-        "tags": [
-          "Token"
-        ],
+        "tags": ["Token"],
         "operationId": "Token_ListAreas",
         "responses": {
           "200": {
@@ -2992,52 +2476,34 @@
     },
     "/User": {
       "post": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "operationId": "User_Add",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/User"
-                  }
-                ],
+                "$ref": "#/components/schemas/User",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/User"
-                  }
-                ],
+                "$ref": "#/components/schemas/User",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "text/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/User"
-                  }
-                ],
+                "$ref": "#/components/schemas/User",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/*+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/User"
-                  }
-                ],
+                "$ref": "#/components/schemas/User",
                 "nullable": true,
                 "x-nullable": true
               }
@@ -3063,52 +2529,34 @@
         }
       },
       "put": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "operationId": "User_Update",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/User"
-                  }
-                ],
+                "$ref": "#/components/schemas/User",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/User"
-                  }
-                ],
+                "$ref": "#/components/schemas/User",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "text/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/User"
-                  }
-                ],
+                "$ref": "#/components/schemas/User",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/*+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/User"
-                  }
-                ],
+                "$ref": "#/components/schemas/User",
                 "nullable": true,
                 "x-nullable": true
               }
@@ -3136,9 +2584,7 @@
     },
     "/User/{userId}": {
       "delete": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "operationId": "User_Delete",
         "parameters": [
           {
@@ -3159,9 +2605,7 @@
         }
       },
       "get": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "operationId": "User_GetById",
         "parameters": [
           {
@@ -3196,9 +2640,7 @@
     },
     "/User/BySubject/{subjectId}": {
       "get": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "operationId": "User_GetBySubjectId",
         "parameters": [
           {
@@ -3233,52 +2675,34 @@
     },
     "/User/Search": {
       "post": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "operationId": "User_Search",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/UserSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/UserSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/UserSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/UserSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "text/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/UserSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/UserSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/*+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/UserSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/UserSearch",
                 "nullable": true,
                 "x-nullable": true
               }
@@ -3306,52 +2730,34 @@
     },
     "/User/PagedSearch": {
       "post": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "operationId": "User_PagedSearch",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "text/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
             },
             "application/*+json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/PagedSearch"
-                  }
-                ],
+                "$ref": "#/components/schemas/PagedSearch",
                 "nullable": true,
                 "x-nullable": true
               }
@@ -3394,9 +2800,7 @@
     },
     "/User/{userId}/Roles": {
       "get": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "operationId": "User_GetUserRoles",
         "parameters": [
           {
@@ -3431,9 +2835,7 @@
     },
     "/User/{userId}/UpdateRoles": {
       "put": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "operationId": "User_UpdateRoles",
         "parameters": [
           {
@@ -3520,9 +2922,7 @@
     },
     "/User/HasPermission/{areaName}/{permissionName}": {
       "get": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "operationId": "User_HasPermission",
         "parameters": [
           {
@@ -3569,9 +2969,7 @@
     },
     "/User/MigrateUser/{fromSubjectId}/{toSubjectId}": {
       "post": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "operationId": "User_MigrateUserSubject",
         "parameters": [
           {
@@ -3635,11 +3033,7 @@
             "x-nullable": true
           },
           "value": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/Area"
-              }
-            ],
+            "$ref": "#/components/schemas/Area",
             "nullable": true,
             "x-nullable": true
           }
@@ -3671,11 +3065,7 @@
             "x-nullable": false
           },
           "area": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/Area"
-              }
-            ],
+            "$ref": "#/components/schemas/Area",
             "nullable": true,
             "x-nullable": true
           }
@@ -3768,10 +3158,7 @@
         "x-nullable": true
       },
       "ListSortDirection": {
-        "enum": [
-          "Ascending",
-          "Descending"
-        ],
+        "enum": ["Ascending", "Descending"],
         "type": "string",
         "x-nullable": false
       },
@@ -3799,11 +3186,7 @@
             "x-nullable": true
           },
           "sortDirection": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/ListSortDirection"
-              }
-            ],
+            "$ref": "#/components/schemas/ListSortDirection",
             "nullable": true,
             "x-nullable": true
           },
@@ -3832,11 +3215,7 @@
             "x-nullable": true
           },
           "searchRequest": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/PagedSearch"
-              }
-            ],
+            "$ref": "#/components/schemas/PagedSearch",
             "nullable": true,
             "x-nullable": true
           }
@@ -3845,11 +3224,7 @@
         "x-nullable": true
       },
       "Severity": {
-        "enum": [
-          "Error",
-          "Warning",
-          "Info"
-        ],
+        "enum": ["Error", "Warning", "Info"],
         "type": "string",
         "x-nullable": false
       },
@@ -3879,11 +3254,7 @@
             "x-nullable": true
           },
           "severity": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/Severity"
-              }
-            ],
+            "$ref": "#/components/schemas/Severity",
             "x-nullable": false
           },
           "errorCode": {
@@ -3986,11 +3357,7 @@
             "x-nullable": true
           },
           "value": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/Client"
-              }
-            ],
+            "$ref": "#/components/schemas/Client",
             "nullable": true,
             "x-nullable": true
           }
@@ -4067,11 +3434,7 @@
             "x-nullable": true
           },
           "searchRequest": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/PagedSearch"
-              }
-            ],
+            "$ref": "#/components/schemas/PagedSearch",
             "nullable": true,
             "x-nullable": true
           }
@@ -4275,11 +3638,7 @@
             "x-nullable": true
           },
           "searchRequest": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/PagedSearch"
-              }
-            ],
+            "$ref": "#/components/schemas/PagedSearch",
             "nullable": true,
             "x-nullable": true
           }
@@ -4386,11 +3745,7 @@
             "x-nullable": true
           },
           "value": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/MigrationResult"
-              }
-            ],
+            "$ref": "#/components/schemas/MigrationResult",
             "nullable": true,
             "x-nullable": true
           }
@@ -4411,11 +3766,7 @@
             "x-nullable": true
           },
           "value": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/Permission"
-              }
-            ],
+            "$ref": "#/components/schemas/Permission",
             "nullable": true,
             "x-nullable": true
           }
@@ -4440,11 +3791,7 @@
             "x-nullable": true
           },
           "searchRequest": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/PagedSearch"
-              }
-            ],
+            "$ref": "#/components/schemas/PagedSearch",
             "nullable": true,
             "x-nullable": true
           }
@@ -4560,11 +3907,7 @@
             "x-nullable": true
           },
           "value": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/PermissionConstraint"
-              }
-            ],
+            "$ref": "#/components/schemas/PermissionConstraint",
             "nullable": true,
             "x-nullable": true
           }
@@ -4639,11 +3982,7 @@
             "x-nullable": true
           },
           "searchRequest": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/PagedSearch"
-              }
-            ],
+            "$ref": "#/components/schemas/PagedSearch",
             "nullable": true,
             "x-nullable": true
           }
@@ -4664,11 +4003,7 @@
             "x-nullable": true
           },
           "value": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/Role"
-              }
-            ],
+            "$ref": "#/components/schemas/Role",
             "nullable": true,
             "x-nullable": true
           }
@@ -4759,11 +4094,7 @@
             "x-nullable": true
           },
           "searchRequest": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/PagedSearch"
-              }
-            ],
+            "$ref": "#/components/schemas/PagedSearch",
             "nullable": true,
             "x-nullable": true
           }
@@ -4775,20 +4106,12 @@
         "type": "object",
         "properties": {
           "permissionConstraint": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/PermissionConstraint"
-              }
-            ],
+            "$ref": "#/components/schemas/PermissionConstraint",
             "nullable": true,
             "x-nullable": true
           },
           "rolePermission": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/RolePermission"
-              }
-            ],
+            "$ref": "#/components/schemas/RolePermission",
             "nullable": true,
             "x-nullable": true
           }
@@ -4800,20 +4123,12 @@
         "type": "object",
         "properties": {
           "role": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/Role"
-              }
-            ],
+            "$ref": "#/components/schemas/Role",
             "nullable": true,
             "x-nullable": true
           },
           "permission": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/Permission"
-              }
-            ],
+            "$ref": "#/components/schemas/Permission",
             "nullable": true,
             "x-nullable": true
           },
@@ -4870,11 +4185,7 @@
             "x-nullable": true
           },
           "searchRequest": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/PagedSearch"
-              }
-            ],
+            "$ref": "#/components/schemas/PagedSearch",
             "nullable": true,
             "x-nullable": true
           }
@@ -4899,11 +4210,7 @@
             "x-nullable": true
           },
           "searchRequest": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/PagedSearch"
-              }
-            ],
+            "$ref": "#/components/schemas/PagedSearch",
             "nullable": true,
             "x-nullable": true
           }
@@ -4960,11 +4267,7 @@
             "x-nullable": true
           },
           "value": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/User"
-              }
-            ],
+            "$ref": "#/components/schemas/User",
             "nullable": true,
             "x-nullable": true
           }
@@ -5027,9 +4330,7 @@
   },
   "security": [
     {
-      "oauth2": [
-        "api1"
-      ]
+      "oauth2": ["api1"]
     }
   ]
 }
